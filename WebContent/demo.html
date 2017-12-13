@@ -1,0 +1,27 @@
+<html>
+<head>
+<title>
+Demo
+</title>
+<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+<script src="https://d3js.org/d3.v4.min.js"></script>
+</head>
+
+<body>
+Hello
+<img id="floor"
+src="http://chezerbey.files.wordpress.com/2009/08/plan_original_111710.jpg"
+width="100%"/>
+<script>
+$('#floor').click(function(e) {
+   var $this = $(this);
+   var offset = $this.offset();
+   var pos = [];
+   pos.x=(e.pageX-offset.left);
+   pos.y=(e.pageY-offset.top);
+                console.log('x: '+pos.x+'  |  y: '+pos.y);
+});
+</script>
+</body>
+
+</html>

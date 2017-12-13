@@ -1,0 +1,52 @@
+<html>
+<head>
+<title>3 Pixels</title>
+<link rel="stylesheet" href="js/jquery-ui-1.12.1/jquery-ui.css">
+<script src="js/jquery-3.1.1.js"></script>
+<script src="js/jquery-ui-1.12.1/jquery-ui.js"></script>
+<script src="js/myScript.js"></script>
+<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<script>var ctx = "${pageContext.request.contextPath}";console.log(ctx);</script>
+<body>
+<div id = "dialog-1" title = "Start by uploading a floor plan...">
+Upload Floor Plan:<br>
+<input id="fileUpload" type="file"/><br><br>
+Select scaling for the floor plan:
+<label>1px = </label>
+<select id="scale">
+  <option value="0.01">1 cm</option>
+  <option value="0.1">10 cm</option>
+  <option value="1">1 m</option>
+  <option value="10">10m</option>
+  <option value="100">100m</option>
+</select>
+<br><br>
+<button id="closeDialog" type="button">Ok</button>
+</div>
+<div class="topBar">3 Pixels</div>
+<div class="centerHeader">
+<h1>Enterprise WiFi RF Planning and Visualization</h1>
+</div>
+<div class="section1">
+<button id="uploadDialog" type="button">Get Started!</button>
+</div>
+<div class="floorPlanEditor">
+<div class="floorPlan" >
+<div id="image-holder"></div>
+<canvas id="myCanvas" width="640" height="480" style="border:1px solid #d3d3d3;">
+</div>
+<div class="sidePanel">
+<div class="apSelection">
+<div class="apImgCover"><img class="apImg apImgR" src="img/router1.png"/></div>
+<div class="apImgCover"><img class="apImg apImgR" src="img/router2.png"/></div>
+<div class="apImgCover"><img class="apImg apImgR" src="img/router3.png"/></div>
+<div class="apImgCover"><img class="apImg apImgR" src="img/router4.png"/></div>
+<div class="apImgCover"><img class="apImg apImgR" src="img/router5.png"/></div>
+</div>
+<button id="generateHeatmapBtn" type="button" onClick="generateHeatmap()">Generate Heatmap</button>
+<div>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,117 @@
+body{
+background: #fff;
+color: #8a8c7e;
+font-size: 100%;
+line-height: 1.25;
+font-family: 'Lato', 'Avenir Next', Arial, sans-serif;
+margin: 0px;
+}
+button{
+   font-size: 100%;
+   cursor: pointer;
+}
+
+		 
+.topBar{
+background: #F1F2B5; /* fallback for old browsers */
+background: -webkit-linear-gradient(to left, #F1F2B5 , #135058); /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to left, #F1F2B5 , #135058); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */height: 120px;
+padding: 10px;
+margin-bottom: 20px;
+}
+
+.topBar h1,h2{
+	color: #F1F2B5;
+}
+
+.centerHeader{
+text-align: center;
+}
+.section1{
+text-align: center;
+}
+
+
+button {
+    border: none;
+    padding: 15px 30px;
+    outline: none;
+    background: #135058;;
+    color: #fff;
+    font-weight: 400;
+    text-transform: uppercase;
+    border-radius: 2px;
+    letter-spacing: 1px
+}
+
+.floorPlanEditor{
+margin: 3% 5%;
+}
+.floorPlan{
+    padding: 10px;
+    border: 1px solid;
+	margin-bottom: 80px;
+    float: left;
+    height: 480px;
+}
+.image-holder, .floor-image{
+width:640px;
+height:480px;
+}
+.sidePanel{
+float: right;
+width: 300px;
+}
+
+.apImgCover{
+display: inline-block;
+margin: 10px;
+padding: 10px;
+border: 1px solid;
+}
+
+.apImgR{
+	width: 30px;
+	height: 30px;	
+}
+
+.apDesc{
+    font-size: 10px;
+}
+.apDisb{
+    background-color: #000;
+    opacity: 0.25;
+    }
+
+.ui-widget-header,.ui-state-default, ui-button {
+    background:#135058;;
+    border: 1px solid #135058;;
+    color: #FFFFFF;
+    font-weight: bold;
+}
+
+.ui-dialog .ui-dialog-content {
+    padding: 20px;
+}
+.ui-widget-overlay {
+    background: #aaa;
+    opacity: .5;
+}
+
+#loadingDiv{
+	position: fixed;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    margin: 0px;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding-top: 10%;
+    display: none;
+    z-index: 10000;
+}
+
+
+
+
+	
+}
